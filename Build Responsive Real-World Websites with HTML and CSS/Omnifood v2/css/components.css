@@ -181,6 +181,10 @@ strong {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--footer {
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .grid--vertical-center {
   align-items: center;
 }
