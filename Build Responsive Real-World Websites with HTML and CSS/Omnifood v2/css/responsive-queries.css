@@ -26,6 +26,8 @@
   }
 
   .grid {
+    -webkit-column-gap: 4.8rem;
+    -moz-column-gap: 4.8rem;
     column-gap: 4.8rem;
     row-gap: 6.4rem;
   }
@@ -66,6 +68,7 @@
 
   .hero {
     gap: 6.4rem;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding: 0 8rem;
   }
@@ -80,6 +83,8 @@
   }
 
   .delivered-meals {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 3.2rem;
   }
@@ -97,6 +102,7 @@
   }
 
   .section-testimonials {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -105,10 +111,12 @@
   }
 
   .cta {
+    -ms-grid-columns: 3fr 2fr;
     grid-template-columns: 3fr 2fr;
   }
 
   .cta-form {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -128,6 +136,7 @@
 
     .diets {
       grid-column: 1 / -1;
+      -ms-grid-column-align: center;
       justify-self: center;
     }
 
@@ -145,11 +154,14 @@
 
     .address-col,
     .logo-col {
+      -ms-grid-column-span: 3;
       grid-column: span 3;
     }
 
     .nav-col {
+      -ms-grid-column-span: 2;
       grid-column: span 2;
+      -ms-grid-row: 1;
       grid-row: 1;
       margin-bottom: 3.2rem;
     }
@@ -167,6 +179,7 @@
     .grid--2-cols,
     .grid--3-cols,
     .grid--4-cols {
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
     }
 
@@ -193,27 +206,34 @@
     }
 
     .step-img-box:nth-child(2) {
+      -ms-grid-row: 1;
       grid-row: 1;
     }
 
     .step-img-box:nth-child(6) {
+      -ms-grid-row: 5;
       grid-row: 5;
     }
 
     .step-img-box {
+      -webkit-transform: translateY(2.4rem);
+      -ms-transform: translateY(2.4rem);
       transform: translateY(2.4rem);
     }
 
     .testimonials {
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
     }
 
     .gallery {
+      -ms-grid-columns: 1fr 1.2rem 1fr 1.2rem 1fr 1.2rem 1fr;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.2rem;
     }
 
     .cta {
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
     }
 
@@ -223,6 +243,7 @@
 
     .cta-img-box {
       height: 32rem;
+      -ms-grid-row: 1;
       grid-row: 1;
     }
   }
@@ -233,20 +254,31 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.97);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100vh;
     opacity: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     left: 0;
     pointer-events: none;
     position: absolute;
     top: 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
     transform: translateX(100%);
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     visibility: hidden;
     width: 100%;
@@ -255,6 +287,8 @@
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
     visibility: visible;
   }
@@ -268,6 +302,9 @@
   }
 
   .main-nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 4.8rem;
   }

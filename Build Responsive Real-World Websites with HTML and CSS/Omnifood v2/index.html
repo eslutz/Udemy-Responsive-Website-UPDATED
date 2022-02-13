@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs." />
 
+    <link rel="icon" href="img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,7 +15,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive-queries.css" />
 
-    <title>Omnifood</title>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <title>Omnifood &mdash; Never Cook Again!</title>
   </head>
   <body>
     <header class="header">
@@ -74,9 +78,9 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how-it-works">
         <div class="container">
-          <span class="subheading" id="how-it-works">How it works</span>
+          <span class="subheading">How it works</span>
           <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
         </div>
         <div class="container grid grid--2-cols grid--vertical-center">
@@ -116,9 +120,9 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
-          <span class="subheading" id="meals">Meals</span>
+          <span class="subheading">Meals</span>
           <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
         </div>
         <div class="container grid grid--3-cols margin-bottom-md">
@@ -215,9 +219,9 @@
           <a class="link" href="#">See all recipes &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
-          <span class="subheading" id="testimonials">Testimonials</span>
+          <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
           <div class="testimonials">
             <figure class="testimonial">
@@ -293,9 +297,9 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
-          <span class="subheading" id="pricing">Pricing</span>
+          <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">Eating well without breaking the bank</h2>
         </div>
         <div class="container grid grid--2-cols margin-bottom-md">
@@ -383,11 +387,11 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="try-for-free">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary" id="try-for-free">Get your first meal for free!</h2>
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
               <p class="cta-text">
                 Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or
                 pause anytime. And the first meal is on us!
@@ -437,7 +441,7 @@
               <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
             </li>
           </ul>
-          <p class="copyright">Copyright &copy; 2022 by Omnifood</p>
+          <p class="copyright">Copyright &copy; <span class="year"> by Omnifood</p>
         </div>
         <div class="address-col">
           <p class="footer-heading">Contact us</p>
